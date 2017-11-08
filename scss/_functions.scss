@@ -48,6 +48,11 @@
   @return $string;
 }
 
+// Get spacer
+@function spacer($size: 3) {
+  @return map-get($spacers, $size);
+}
+
 // Color contrast
 @function color-yiq($color) {
   $r: red($color);
